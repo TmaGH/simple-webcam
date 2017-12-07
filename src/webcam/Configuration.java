@@ -8,7 +8,7 @@ public class Configuration {
 	// --------------- Configuration -----------------------------
 
 	private String device;
-	private String port;
+	private String source;
 	private String pathToScriptDir;
 	private String pathToClipDir;
 	private String pathToWebCamFile;
@@ -36,9 +36,9 @@ public class Configuration {
 	public String getDevice() {
 		return device;
 	}
-
-	public String getPort() {
-		return port;
+	
+	public String getSource() {
+		return source;
 	}
 
 	public void setPathToClips(String pathToClips) {
@@ -61,14 +61,14 @@ public class Configuration {
 	public void setDevice(String device) {
 		this.device = device;
 	}
-
-	public void setPort(String port) {
-		this.port = port;
+	
+	public void setSource(String source) {
+		this.source = source;
 	}
 
 	@Override
 	public String toString() {
-		return "Configuration[device=" + device + ",port=" + port + ",pathToScriptDir=" + pathToScriptDir
+		return "Configuration[device=" + device + ",source=" + source + ",pathToScriptDir=" + pathToScriptDir
 				+ ",pathToClipDir=" + pathToClipDir + ",pathToWebCamFile=" + pathToWebCamFile + ",pathToClips="
 				+ pathToClips + "]";
 	}

@@ -30,7 +30,7 @@ public class CameraStream {
 		streamid = Math.random();
 		System.out.println("started stream.");
 		try {
-			ProcessBuilder pb = new ProcessBuilder(conf.getpathToScriptDir() + "/start_stream.sh", conf.getDevice(), conf.getPort(),
+			ProcessBuilder pb = new ProcessBuilder(conf.getpathToScriptDir() + "/start_stream.sh", conf.getDevice(), conf.getSource(),
 					Double.toString(streamid), conf.getPathToWebCamFile());
 			pb.start();
 			fileSizeLimiter = new Thread(fc);

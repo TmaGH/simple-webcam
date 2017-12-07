@@ -24,7 +24,7 @@ Camera Control Utility <%} %>
 
 </h1>
 <video controls preload="none" id="stream" autoplay>
-<source src="http://localhost:8888/webcam<%=streamid%>" type="video/webm">
+<source src="http://<%=conf.getSource()%><%=streamid%>" type="video/webm">
     Your browser does not support the VIDEO tag and/or WebM.
 </video>
 
