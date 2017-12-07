@@ -1,0 +1,8 @@
+{
+  "device": "v4l2:///dev/video0",
+  "port": "8888",
+  "pathToScriptDir": "",
+  "pathToClipDir": "",
+  "pathToWebCamFile": "",
+  "pathToClips": "http://localhost:8080/clips/"
+}
