@@ -12,7 +12,7 @@ public class CameraStream {
 	}
 
 	protected static void killStream() {
-		ProcessBuilder pb = new ProcessBuilder("killall", "vlc");
+		ProcessBuilder pb = new ProcessBuilder("killall", "-9", "vlc");
 		try {
 			pb.start();
 			if (fileSizeLimiter != null) {

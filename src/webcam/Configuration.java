@@ -9,6 +9,7 @@ public class Configuration {
 
 	private String device;
 	private String source;
+	private String externalSource;
 	private String pathToScriptDir;
 	private String pathToClipDir;
 	private String pathToWebCamFile;
@@ -39,6 +40,14 @@ public class Configuration {
 	
 	public String getSource() {
 		return source;
+	}
+
+	public String getExternalSource() {
+		return externalSource;
+	}
+
+	public void setExternalSource(String externalSource) {
+		this.externalSource = externalSource;
 	}
 
 	public void setPathToClips(String pathToClips) {
